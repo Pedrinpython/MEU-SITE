@@ -1,0 +1,153 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #004aad;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+    max-width: 200px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #0060a1;
+    border-radius: 5px;
+}
+
+/* Seção de Sobre */
+.about {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    margin-bottom: 60px;
+}
+
+.about h1 {
+    font-size: 2.8rem;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.values, .team {
+    margin-bottom: 50px;
+}
+
+.values h2, .team h2 {
+    font-size: 2rem;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.values ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.values ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.member h3 {
+    font-size: 1.3rem;
+    color: #004aad;
+    margin-bottom: 5px;
+}
+
+.member p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu a {
+        margin: 5px 0;
+    }
+
+    .team-members {
+        flex-direction: column;
+    }
+
+    .team .member {
+        margin-bottom: 30px;
+    }
+}
